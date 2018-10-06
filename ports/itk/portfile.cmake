@@ -17,6 +17,7 @@ vcpkg_apply_patches(
     SOURCE_PATH ${SOURCE_PATH}
     PATCHES
       "${CMAKE_CURRENT_LIST_DIR}/hdf5_config_mode_find_package.patch"
+      "${CMAKE_CURRENT_LIST_DIR}/doubleconversion_add_include_dirs.patch"
 )
 
 vcpkg_configure_cmake(
