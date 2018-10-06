@@ -1,0 +1,12 @@
+diff --git a/Modules/ThirdParty/DoubleConversion/CMakeLists.txt b/Modules/ThirdParty/DoubleConversion/CMakeLists.txt
+index 7075d94..e131cdd 100644
+--- a/Modules/ThirdParty/DoubleConversion/CMakeLists.txt
++++ b/Modules/ThirdParty/DoubleConversion/CMakeLists.txt
+@@ -14,6 +14,7 @@ if(ITK_USE_SYSTEM_DOUBLECONVERSION)
+ 
+   if (double-conversion_LIBRARIES AND double-conversion_INCLUDE_DIRS)
+     set(ITKDoubleConversion_SYSTEM_INCLUDE_DIRS
++      ${double-conversion_INCLUDE_DIRS}/..
+       ${double-conversion_INCLUDE_DIRS})
+     set(ITKDoubleConversion_LIBRARIES
+       "${double-conversion_LIBRARIES}")
